@@ -1,0 +1,120 @@
+body{ 
+    height: 400px;
+    font-family: 'Courgette', cursive;
+}
+
+
+h1 {
+    margin: 2px;
+    text-align: center;
+    text-decoration-style: double;
+    text-decoration-line: underline;
+    text-decoration-color: coral;
+
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    background: rgb(192, 142, 142);
+    text-decoration-color: white;
+    display: inline-block;
+    padding: 10px;
+    width: 15%;
+    margin-right: -43px;
+    position: relative;
+} 
+
+.submenu {
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: rgb(66, 57, 57);
+    font-style: 'Courgette', cursive;
+    width: 100%;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 99999;
+    display: none;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+p{
+    font-size: 20px; 
+    font-family: 'Courgette', cursive;
+}
+
+
+.submenu li{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: gray;
+    border-bottom: 1px solid #fff;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.capauno {
+    width: 500px;
+    height: 300px;
+    background: rgb(207, 137, 137);
+    position: relative;
+    z-index:0;
+}
+.capados {
+    width: 200px;
+    height: 200px;
+    background: yellowgreen;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+.capatres {
+    width: 100%;
+    height: 1000px;
+    background: lightcyan;
+    position: relative;
+}
+.discografia {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.discografia li {
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.discografia li img {
+    width: 100%;
+}
+.discografia li .overlay {
+    width: 100%;
+    height: 250px;
+    background: rgba(34, 34, 34, 0.5);
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    line-height: 250px;
+    opacity: 0;
+    transition: ease all 0.5s;
+}
+.discografia li .overlay:hover {
+    opacity: 1;
+}
