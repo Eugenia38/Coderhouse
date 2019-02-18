@@ -119,18 +119,6 @@ p{
     opacity: 1;
 }
 
-@media only screen and (max-width: 400px) {
-    body {
-        background: grey;
-    }
-}
-
-@media only screen and (min-width:401px) and (max-width:960px) {
-    body { 
-        background: rgb(206, 92, 92);
-    }
-}
-
 .container {
     display: grid;
     grid-template-columns: 200px auto;
@@ -160,5 +148,10 @@ p{
 
 .fotos{
     width: 100%;
-    height: 250px; 
+    height: 100px; 
+}
+
+#Galeria img {
+    max-width: 250px;
+    
 }
